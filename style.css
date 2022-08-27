@@ -1,0 +1,54 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap');
+
+h1,h2,h3,h4,h5,h6,.especial{
+    font-family: 'Alumni Sans Inline One', cursive;
+
+}
+header{
+    position:fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu-items{
+    position:fixed;
+    bottom:0;
+    left: -8%;
+    padding: 10%;
+    z-index: 1;
+}
+.relleno{
+    height: 50px;
+}
+
+.bg--img{
+ 
+    height: 80vh;
+    white-space: 50px;
+    background-image: url("./media/fondo4.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.titulo{
+    position: absolute;
+    top: 40%;
+    left: 2%;
+}
+.subtitulo{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+}
+
+.cover{
+    height: 100px;
+    height: 600px;
+    background-image: url("./media/avion2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
