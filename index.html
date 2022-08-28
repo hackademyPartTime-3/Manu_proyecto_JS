@@ -20,18 +20,72 @@
 
   </head>
   <body> <!-- script boostrap -->
+
+    <div id="login_Side">
+      <div class="container h-100">
+          <div class="row h-100 justify-content-center align-items-center especial">
+              <div class="col-12 col-md-9">
+                <div id="salir_Login">
+                  <i class="bi bi-x fs-2 "></i>
+                </div>
+                <form>
+                  <div class="mb-5">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-5">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-outline-dark mt-4 especial ">login</button>
+                </div>
+                </form>
+              </div>
+          </div>
+        </div>
+    </div>
+    <div id="register_Side">
+      <div class="container h-100">
+          <div class="row h-100 justify-content-center align-items-center especial">
+              <div class="col-12 col-md-9">
+                <div id="salir_Register">
+                  <i class="bi bi-x fs-2 "></i>
+                </div>
+                <form>
+                  <div class="mb-5">
+                    <label for="exampleInputEmail2" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail2" 
+                    aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-5">
+                    <label for="exampleInputPassword3" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword3">
+                  </div>
+                  <div class="mb-5">
+                    <label for="exampleInputPassword4" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword4">
+                  </div>
+                  <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-outline-dark mt-4 especial ">Register</button>
+                </div>
+                </form>
+              </div>
+          </div>
+        </div>
+    </div>
     <header>
-        <nav class="navbar bg-transparent p-3 ">
+        <nav class=" navbar bg-transparent p-3 ">
             <div class="container-fluid especial">
-                  <a href="" class="navbar-brand" mb-0 fs-4 ><i class="fa-solid fa-globe"></i>
+                  <a id="logo" href="" class="navbar-brand" mb-0 fs-4 ><i id="globo" class="fa-solid fa-globe"></i>
                   <span class="ms-2">FLYMN</span>
                     </a>
-                <div>
-                    <a href="" class="text-decoration-none text-reset fs-5 mx-3 ">LOGIN</a>
-                    <a href=""class="text-decoration-none text-reset fs-5">REGISTER</a>
+                <div class="login_Register">
+                    <a href="" id="toggle_Login" class="text-decoration-none text-reset fs-5 mx-3 ">LOGIN</a>
+                    <a href="" id="toggle_Register" class="register text-decoration-none text-reset fs-5">REGISTER</a>
                 </div>
             </div>
-          </nav>
+        </nav>
 
           <div class="menu-items ">
             <ul class="list-unstyled especial fs-6 ps-5">
@@ -134,7 +188,7 @@
     </section>
 
 
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <footer class="d-flex flex-wrap justify-content-between  py-3 my-4 border-top">
       <div class="col-md-4 d-flex align-items-center especial">
         <span class="mb-3 mb-md-0 fs-6 ps-3">© Manuel Noriega 2022</span>
       </div>
@@ -152,6 +206,9 @@
       
     </script>
     
+    <!-- libreria de animacion greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+
     <!-- script interno -->
     <script src="./main.js"></script>
 
